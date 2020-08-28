@@ -1,7 +1,7 @@
 {
-  "name": "my-blog",
+  "name": "Lazy man",
   "version": "1.0.0",
-  "author": "reco_luan",
+  "author": "LoryHuang",
   "scripts": {
     "dev": "vuepress dev .",
     "build": "vuepress build ."
