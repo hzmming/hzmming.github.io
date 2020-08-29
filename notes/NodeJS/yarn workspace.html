@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>yarn workspace | Lazy man</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.b68c3057.css" as="style"><link rel="preload" href="/assets/js/app.1b22b54f.js" as="script"><link rel="preload" href="/assets/js/3.5267404b.js" as="script"><link rel="preload" href="/assets/js/1.bd6596e1.js" as="script"><link rel="preload" href="/assets/js/32.bfb61002.js" as="script"><link rel="prefetch" href="/assets/js/10.4c930c4a.js"><link rel="prefetch" href="/assets/js/11.c5cab94c.js"><link rel="prefetch" href="/assets/js/12.197002bf.js"><link rel="prefetch" href="/assets/js/13.7640799f.js"><link rel="prefetch" href="/assets/js/14.130ff084.js"><link rel="prefetch" href="/assets/js/15.1a7e8e97.js"><link rel="prefetch" href="/assets/js/16.9bde9998.js"><link rel="prefetch" href="/assets/js/17.0d9f7f7b.js"><link rel="prefetch" href="/assets/js/18.314eb9af.js"><link rel="prefetch" href="/assets/js/19.9e6d3e32.js"><link rel="prefetch" href="/assets/js/20.c3074f92.js"><link rel="prefetch" href="/assets/js/21.041a0c0b.js"><link rel="prefetch" href="/assets/js/22.334b358a.js"><link rel="prefetch" href="/assets/js/23.137e5e61.js"><link rel="prefetch" href="/assets/js/24.d693ab71.js"><link rel="prefetch" href="/assets/js/25.2ea8b822.js"><link rel="prefetch" href="/assets/js/26.e0f6094f.js"><link rel="prefetch" href="/assets/js/27.96c8527f.js"><link rel="prefetch" href="/assets/js/28.f6228d4f.js"><link rel="prefetch" href="/assets/js/29.46560829.js"><link rel="prefetch" href="/assets/js/30.b84efba0.js"><link rel="prefetch" href="/assets/js/31.4837ee59.js"><link rel="prefetch" href="/assets/js/33.34a8679e.js"><link rel="prefetch" href="/assets/js/34.b5fe6442.js"><link rel="prefetch" href="/assets/js/35.f7478d29.js"><link rel="prefetch" href="/assets/js/36.162b4094.js"><link rel="prefetch" href="/assets/js/37.7627fada.js"><link rel="prefetch" href="/assets/js/38.a9a67221.js"><link rel="prefetch" href="/assets/js/39.40bc3dfd.js"><link rel="prefetch" href="/assets/js/4.04786932.js"><link rel="prefetch" href="/assets/js/40.fbdb23ab.js"><link rel="prefetch" href="/assets/js/41.9c0808fd.js"><link rel="prefetch" href="/assets/js/42.78412491.js"><link rel="prefetch" href="/assets/js/43.563bbf65.js"><link rel="prefetch" href="/assets/js/44.6f053b6b.js"><link rel="prefetch" href="/assets/js/45.d3455ac7.js"><link rel="prefetch" href="/assets/js/46.64425208.js"><link rel="prefetch" href="/assets/js/47.d6f78973.js"><link rel="prefetch" href="/assets/js/48.2a3e5392.js"><link rel="prefetch" href="/assets/js/49.8f735f5e.js"><link rel="prefetch" href="/assets/js/5.d322919b.js"><link rel="prefetch" href="/assets/js/50.953da447.js"><link rel="prefetch" href="/assets/js/51.b9232724.js"><link rel="prefetch" href="/assets/js/52.b84a8045.js"><link rel="prefetch" href="/assets/js/53.a283f767.js"><link rel="prefetch" href="/assets/js/54.77e4c501.js"><link rel="prefetch" href="/assets/js/55.aaa47746.js"><link rel="prefetch" href="/assets/js/56.b1356972.js"><link rel="prefetch" href="/assets/js/57.a007f377.js"><link rel="prefetch" href="/assets/js/58.97b67c86.js"><link rel="prefetch" href="/assets/js/59.a041ee6f.js"><link rel="prefetch" href="/assets/js/6.5607a355.js"><link rel="prefetch" href="/assets/js/60.5996d5d4.js"><link rel="prefetch" href="/assets/js/61.49c7bbe6.js"><link rel="prefetch" href="/assets/js/62.45e4365d.js"><link rel="prefetch" href="/assets/js/63.679b1c3b.js"><link rel="prefetch" href="/assets/js/64.cb5f7972.js"><link rel="prefetch" href="/assets/js/65.d0d77f52.js"><link rel="prefetch" href="/assets/js/66.c56a1a1d.js"><link rel="prefetch" href="/assets/js/67.4debf39b.js"><link rel="prefetch" href="/assets/js/68.9ec36f82.js"><link rel="prefetch" href="/assets/js/69.d0cba3ad.js"><link rel="prefetch" href="/assets/js/7.5d7d5b76.js"><link rel="prefetch" href="/assets/js/70.9aae6359.js"><link rel="prefetch" href="/assets/js/71.7f880cf6.js"><link rel="prefetch" href="/assets/js/72.98225461.js"><link rel="prefetch" href="/assets/js/73.fdc6a615.js"><link rel="prefetch" href="/assets/js/74.8263e38d.js"><link rel="prefetch" href="/assets/js/75.a11ca42f.js"><link rel="prefetch" href="/assets/js/76.93493540.js"><link rel="prefetch" href="/assets/js/77.9ecbc842.js"><link rel="prefetch" href="/assets/js/78.f18eeba6.js"><link rel="prefetch" href="/assets/js/79.c983e6b5.js"><link rel="prefetch" href="/assets/js/8.1adb2159.js"><link rel="prefetch" href="/assets/js/80.f63d6e93.js"><link rel="prefetch" href="/assets/js/81.ed2fb0fb.js"><link rel="prefetch" href="/assets/js/82.6682e038.js"><link rel="prefetch" href="/assets/js/83.34d7d24c.js"><link rel="prefetch" href="/assets/js/84.07a92238.js"><link rel="prefetch" href="/assets/js/85.e6be3c32.js"><link rel="prefetch" href="/assets/js/86.275b3720.js"><link rel="prefetch" href="/assets/js/87.c22927be.js"><link rel="prefetch" href="/assets/js/88.25147fa5.js"><link rel="prefetch" href="/assets/js/89.20b9350c.js"><link rel="prefetch" href="/assets/js/9.c5ed272e.js"><link rel="prefetch" href="/assets/js/90.e8e903d0.js"><link rel="prefetch" href="/assets/js/91.7ad404fe.js"><link rel="prefetch" href="/assets/js/92.92c7376e.js"><link rel="prefetch" href="/assets/js/93.b913a2ec.js"><link rel="prefetch" href="/assets/js/94.8882dc43.js"><link rel="prefetch" href="/assets/js/95.7c40d582.js"><link rel="prefetch" href="/assets/js/96.332f3df5.js"><link rel="prefetch" href="/assets/js/97.3dd1f0cc.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b68c3057.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-dad8a512><div data-v-dad8a512><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-dad8a512 data-v-dad8a512><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-dad8a512 data-v-dad8a512><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>Lazy man</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>LoryHuang</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-dad8a512><header class="navbar" data-v-dad8a512><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="Lazy man" class="logo"> <span class="site-name">Lazy man</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/API管理/" class="nav-link"><i class="iconfont undefined"></i>
+  API管理
+</a></li><li class="dropdown-item"><!----> <a href="/categories/HTML/" class="nav-link"><i class="iconfont undefined"></i>
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/categories/HTTP/" class="nav-link"><i class="iconfont undefined"></i>
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Java/" class="nav-link"><i class="iconfont undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/NodeJS/" class="nav-link"><i class="iconfont undefined"></i>
+  NodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/chrome/" class="nav-link"><i class="iconfont undefined"></i>
+  chrome
+</a></li><li class="dropdown-item"><!----> <a href="/categories/ubuntu/" class="nav-link"><i class="iconfont undefined"></i>
+  ubuntu
+</a></li><li class="dropdown-item"><!----> <a href="/categories/windows/" class="nav-link"><i class="iconfont undefined"></i>
+  windows
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据库/" class="nav-link"><i class="iconfont undefined"></i>
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/categories/文档/" class="nav-link"><i class="iconfont undefined"></i>
+  文档
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试/" class="nav-link"><i class="iconfont undefined"></i>
+  测试
+</a></li><li class="dropdown-item"><!----> <a href="/categories/版本控制/" class="nav-link"><i class="iconfont undefined"></i>
+  版本控制
+</a></li><li class="dropdown-item"><!----> <a href="/categories/英语/" class="nav-link"><i class="iconfont undefined"></i>
+  英语
+</a></li><li class="dropdown-item"><!----> <a href="/categories/软件工程/" class="nav-link"><i class="iconfont undefined"></i>
+  软件工程
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/hzmming" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-dad8a512></div> <aside class="sidebar" data-v-dad8a512><div class="personal-info-wrapper" data-v-ca798c94 data-v-dad8a512><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    LoryHuang
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>87</h3> <h6 data-v-ca798c94>Article</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>26</h3> <h6 data-v-ca798c94>Tag</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/API管理/" class="nav-link"><i class="iconfont undefined"></i>
+  API管理
+</a></li><li class="dropdown-item"><!----> <a href="/categories/HTML/" class="nav-link"><i class="iconfont undefined"></i>
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/categories/HTTP/" class="nav-link"><i class="iconfont undefined"></i>
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Java/" class="nav-link"><i class="iconfont undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/NodeJS/" class="nav-link"><i class="iconfont undefined"></i>
+  NodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/categories/chrome/" class="nav-link"><i class="iconfont undefined"></i>
+  chrome
+</a></li><li class="dropdown-item"><!----> <a href="/categories/ubuntu/" class="nav-link"><i class="iconfont undefined"></i>
+  ubuntu
+</a></li><li class="dropdown-item"><!----> <a href="/categories/windows/" class="nav-link"><i class="iconfont undefined"></i>
+  windows
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据库/" class="nav-link"><i class="iconfont undefined"></i>
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/categories/文档/" class="nav-link"><i class="iconfont undefined"></i>
+  文档
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试/" class="nav-link"><i class="iconfont undefined"></i>
+  测试
+</a></li><li class="dropdown-item"><!----> <a href="/categories/版本控制/" class="nav-link"><i class="iconfont undefined"></i>
+  版本控制
+</a></li><li class="dropdown-item"><!----> <a href="/categories/英语/" class="nav-link"><i class="iconfont undefined"></i>
+  英语
+</a></li><li class="dropdown-item"><!----> <a href="/categories/软件工程/" class="nav-link"><i class="iconfont undefined"></i>
+  软件工程
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/hzmming" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>NodeJS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/NodeJS/nexe打包node应用.html" class="sidebar-link">nexe打包node应用</a></li><li><a href="/notes/NodeJS/npm command.html" class="sidebar-link">npm command</a></li><li><a href="/notes/NodeJS/npm i 安装错误.html" class="sidebar-link">npm i 安装错误</a></li><li><a href="/notes/NodeJS/npm scripts串行与并行.html" class="sidebar-link">npm scripts串行与并行</a></li><li><a href="/notes/NodeJS/npm使用技巧.html" class="sidebar-link">npm使用技巧</a></li><li><a href="/notes/NodeJS/yarn workspace.html" class="active sidebar-link">yarn workspace</a></li><li><a href="/notes/NodeJS/调试Node.html" class="sidebar-link">调试Node</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-dad8a512><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>yarn workspace</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>LoryHuang</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2020
+        </a></span></div></div> <div data-v-dad8a512><main class="page"><div class="page-title" style="display:none;"><h1>yarn workspace</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>LoryHuang</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2020-08-26</span></i> <!----> <i class="iconfont reco-tag tags" data-v-3b7f5bdf><span class="tag-item" data-v-3b7f5bdf>NodeJS</span><span class="tag-item" data-v-3b7f5bdf>yarn</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><p><em>写于 2020年8月27日。本文只是使用过后的一个简单记录，没有过多深入</em></p> <h3 id="一-monorepo"><a href="#一-monorepo" class="header-anchor">#</a> 一 monorepo</h3> <p>关于 monorepo 与 multirepo，谁好谁坏，就不说了，而且我也不知道~~</p> <p>monorepo，简单地说就是一个仓库里面存放了多个 npm 包，像 Babel、React、Vue 都有使用 monorepo。</p> <p>举个简单的场景，比如一套系统有前端、后端两个部分，就可以构建如下项目结构</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>monorepo
+  <span class="token operator">|</span>- package.json
+  <span class="token operator">|</span>- /packages
+    <span class="token operator">|</span>- /front
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /backend
+      <span class="token operator">|</span>- package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="二-yarn-workspaces"><a href="#二-yarn-workspaces" class="header-anchor">#</a> 二 yarn workspaces</h3> <h4 id="初始化"><a href="#初始化" class="header-anchor">#</a> 初始化</h4> <p>使用 yarn 初始化项目，并构建如上项目结构</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 初始化并生成package.json</span>
+<span class="token function">yarn</span> init -y
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>/package.json</strong></p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token comment">// 表明私有包（json中不能有注释，自己去掉）</span>
+  <span class="token property">&quot;private&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;workspaces&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;packages/*&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong>front/package.json</strong></p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;font&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+ 
+  <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;cross-env&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5.0.5&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><strong>backend/package.json</strong></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;name&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;backend&quot;</span>,
+  <span class="token string">&quot;version&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;1.0.0&quot;</span>,
+ 
+  <span class="token string">&quot;dependencies&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;cross-env&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;5.0.5&quot;</span>,
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>安装依赖</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">yarn</span> <span class="token function">install</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>最终项目结构为</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>monorepo
+  <span class="token operator">|</span>- package.json
+  <span class="token operator">|</span>- yarn.lock
+  <span class="token operator">|</span>- /node_modules
+  <span class="token operator">|</span>- /packages
+    <span class="token operator">|</span>- /front
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /backend
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>仔细一看，front 和 backend 都依赖了 cross-env，但 cross-env 只被安装在 根目录的 node_modules，并不会被多次安装于各个依赖的 package里。子项目的 node_modules 就一些 bin 之类的。</p> <p>当然如果版本不一样，还是会各自安装自己的，只有一致了，才能提取至根目录</p> <h4 id="添加依赖"><a href="#添加依赖" class="header-anchor">#</a> 添加依赖</h4> <p>代码构建的公共部分放置根目录，业务及特有部分放置子项目目录</p> <h5 id="子项目"><a href="#子项目" class="header-anchor">#</a> 子项目</h5> <p>使用 yarn workspace 为子项目添加依赖，格式为<code>yarn workspace &lt;workspace_name&gt; &lt;command&gt;</code></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">yarn</span> workspace front <span class="token function">add</span> lodash uuid
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h5 id="根目录"><a href="#根目录" class="header-anchor">#</a> 根目录</h5> <p>如果直接向根目录添加依赖会报错，yarn 默认当作用户手误操作。使用 <code>-W</code>明确表示安装至根目录</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">yarn</span> -W <span class="token function">add</span> lodash
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="依赖内部包"><a href="#依赖内部包" class="header-anchor">#</a> 依赖内部包</h4> <p>新建一个内部 package，名叫 shared，用于放置一些公共代码，如 util.js</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>monorepo
+  <span class="token operator">|</span>- package.json
+  <span class="token operator">|</span>- yarn.lock
+  <span class="token operator">|</span>- /node_modules
+  <span class="token operator">|</span>- /packages
++   <span class="token operator">|</span>- /shared
++     <span class="token operator">|</span>- util.js
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /front
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /backend
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p><strong>shared/package.json</strong></p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;private&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;shared&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.0.0&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">yarn</span> workspace front <span class="token function">add</span> shared@0.0.0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>此处有个坑，<strong>安装内部包一定要指明版本号</strong>。如果不指明，yarn 会跑到 npm 市场去搜索</p> <h4 id="配置-git-忽略文件"><a href="#配置-git-忽略文件" class="header-anchor">#</a> 配置 git 忽略文件</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>monorepo
+  <span class="token operator">|</span>- package.json
+  <span class="token operator">|</span>- yarn.lock
++ <span class="token operator">|</span>- .gitignore
+  <span class="token operator">|</span>- /node_modules
+  <span class="token operator">|</span>- /packages
+    <span class="token operator">|</span>- /shared
+      <span class="token operator">|</span>- util.js
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /front
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /backend
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><strong>.gitignore</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>node_modules
+packages/front/dist
+packages/backend/dist
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="使用-webpack"><a href="#使用-webpack" class="header-anchor">#</a> 使用 webpack</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">yarn</span> -W <span class="token function">add</span> webpack webpack-cli -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code>monorepo
+  <span class="token operator">|</span>- package.json
+  <span class="token operator">|</span>- yarn.lock
+  <span class="token operator">|</span>- .gitignore
+  <span class="token operator">|</span>- /node_modules
+  <span class="token operator">|</span>- /packages
+    <span class="token operator">|</span>- /shared
+      <span class="token operator">|</span>- util.js
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /front
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- webpack.config.js
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /backend
+      <span class="token operator">|</span>- /node_modules
++     <span class="token operator">|</span>- webpack.config.js
+      <span class="token operator">|</span>- package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><blockquote><p>只做示意，如安装在根目录或子目录，会遇到哪些问题，更具体的 webpack 相关依赖、相关知识并不在此展开</p></blockquote> <h4 id="配置-eslint-与-prettier"><a href="#配置-eslint-与-prettier" class="header-anchor">#</a> 配置 eslint 与 prettier</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">yarn</span> -W <span class="token function">add</span> eslint prettier -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>eslint 配置文件会自动往上找，所以放置根目录即可</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>monorepo
+  <span class="token operator">|</span>- package.json
+  <span class="token operator">|</span>- yarn.lock
+  <span class="token operator">|</span>- .gitignore
++ <span class="token operator">|</span>- .eslintignore
++ <span class="token operator">|</span>- .eslintrc.js
++ <span class="token operator">|</span>- .prettierrc.js
+  <span class="token operator">|</span>- /node_modules
+  <span class="token operator">|</span>- /packages
+    <span class="token operator">|</span>- /shared
+      <span class="token operator">|</span>- util.js
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /front
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- webpack.config.js
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /backend
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- webpack.config.js
+      <span class="token operator">|</span>- package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p><strong>.eslintignore</strong></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># TODO vscode的eslint插件会读取该配置文件，但eslint-loader却不会~~</span>
+node_modules
+packages/front/dist
+packages/backend/dist
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>有个问题，package里结合 webpack 使用 eslint-loader，虽然能读取到外层的 .eslintrc.js，但却不会读取 .eslintignore，尚未解决</strong></p> <p>所以此处配置的 eslint 忽略文件是不起作用的，先配着，以后说不定就解决了</p> <h4 id="使用-husky-和-lint-staged"><a href="#使用-husky-和-lint-staged" class="header-anchor">#</a> 使用 husky 和 lint-staged</h4> <p><a href="https://github.com/sudo-suhas/lint-staged-multi-pkg" target="_blank" rel="noopener noreferrer">lint-staged-multi-pkg<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>介绍了3种方法，我采用了将 husky 和 lint-staged 安装至根目录</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">yarn</span> -W <span class="token function">add</span> husky lint-staged -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code>monorepo
+  <span class="token operator">|</span>- package.json
+  <span class="token operator">|</span>- yarn.lock
+  <span class="token operator">|</span>- .gitignore
+  <span class="token operator">|</span>- .eslintignore
+  <span class="token operator">|</span>- .eslintrc.js
+  <span class="token operator">|</span>- .prettierrc.js
++ <span class="token operator">|</span>- .lintstagedrc.js
+  <span class="token operator">|</span>- /node_modules
+  <span class="token operator">|</span>- /packages
+    <span class="token operator">|</span>- /shared
+    <span class="token operator">|</span>- util.js
+    <span class="token operator">|</span>- package.json
+  <span class="token operator">|</span>- /front
+    <span class="token operator">|</span>- /node_modules
+    <span class="token operator">|</span>- webpack.config.js
+    <span class="token operator">|</span>- package.json
+  <span class="token operator">|</span>- /backend
+    <span class="token operator">|</span>- /node_modules
+    <span class="token operator">|</span>- webpack.config.js
+    <span class="token operator">|</span>- package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p><strong>.lintstagedrc.js</strong></p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token string">&quot;packages/front/**/*.{js,vue}&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;eslint --fix&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;packages/backend/**/*.{js,vue}&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;eslint --fix&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>package.json</strong></p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;private&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;workspaces&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;packages/*&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
++ <span class="token property">&quot;husky&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
++   <span class="token property">&quot;hooks&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
++     <span class="token property">&quot;pre-commit&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lint-staged&quot;</span>
++   <span class="token punctuation">}</span>
++ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h4 id="使用-postcss"><a href="#使用-postcss" class="header-anchor">#</a> 使用 postcss</h4> <p>配置文件放置根目录？这个还没验证，To be continued</p> <h4 id="使用-commitizen"><a href="#使用-commitizen" class="header-anchor">#</a> 使用 commitizen</h4> <p>放置根目录，结合 husky 使用</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># ui交互形式的commit</span>
+<span class="token function">yarn</span> -W <span class="token function">add</span> commitizen cz-conventional-changelog -D
+<span class="token comment"># 校验commit message</span>
+<span class="token function">yarn</span> -W <span class="token function">add</span> @commitlint/cli @commitlint/config-conventional -D
+<span class="token comment"># 生成CHANGELOG.md</span>
+<span class="token function">yarn</span> -W <span class="token function">add</span> conventional-changelog-cli -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>创建配置文件</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>monorepo
+  <span class="token operator">|</span>- package.json
+  <span class="token operator">|</span>- yarn.lock
+  <span class="token operator">|</span>- .gitignore
+  <span class="token operator">|</span>- .eslintignore
+  <span class="token operator">|</span>- .eslintrc.js
+  <span class="token operator">|</span>- .prettierrc.js
+  <span class="token operator">|</span>- .lintstagedrc.js
++ <span class="token operator">|</span>- commitlint.config.js
+  <span class="token operator">|</span>- /node_modules
+  <span class="token operator">|</span>- /packages
+    <span class="token operator">|</span>- /shared
+      <span class="token operator">|</span>- util.js
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /front
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- webpack.config.js
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /backend
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- webpack.config.js
+      <span class="token operator">|</span>- package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p><strong>commitlint.config.js</strong></p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;@commitlint/config-conventional&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>package.json</strong></p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;private&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;cz&quot;</span><span class="token operator">:</span> <span class="token string">&quot;git cz&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;workspaces&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;packages/*&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;husky&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;hooks&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;pre-commit&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lint-staged&quot;</span><span class="token punctuation">,</span>
+      +     <span class="token property">&quot;commit-msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;commitlint -E HUSKY_GIT_PARAMS&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h4 id="使用-babel"><a href="#使用-babel" class="header-anchor">#</a> 使用 babel</h4> <p>同样是安装在顶级，一样，只做示意</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">yarn</span> -W <span class="token function">add</span> @babel/core @babel/preset-env @babel/runtime-corejs3 -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>创建配置文件</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>monorepo
+  <span class="token operator">|</span>- package.json
+  <span class="token operator">|</span>- yarn.lock
+  <span class="token operator">|</span>- .gitignore
+  <span class="token operator">|</span>- .eslintignore
+  <span class="token operator">|</span>- .eslintrc.js
+  <span class="token operator">|</span>- .prettierrc.js
+  <span class="token operator">|</span>- .lintstagedrc.js
++ <span class="token operator">|</span>- babel.config.js
+  <span class="token operator">|</span>- commitlint.config.js
+  <span class="token operator">|</span>- /node_modules
+  <span class="token operator">|</span>- /packages
+    <span class="token operator">|</span>- /shared
+      <span class="token operator">|</span>- util.js
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /front
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- webpack.config.js
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /backend
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- webpack.config.js
+      <span class="token operator">|</span>- package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p><strong>babel.config.js</strong></p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">// 公共部分</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  presets<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">// 公共部分</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// here: 子目录使用自己的配置文件 .babelrc.js/json</span>
+  babelrcRoots<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;packages/*&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>子项目创建特有配置文件。比如我 front 使用了 ElementUI，很明显 backend 不需要，所以我不能放置在根目录</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>monorepo
+  <span class="token operator">|</span>- package.json
+  <span class="token operator">|</span>- yarn.lock
+  <span class="token operator">|</span>- .gitignore
+  <span class="token operator">|</span>- .eslintignore
+  <span class="token operator">|</span>- .eslintrc.js
+  <span class="token operator">|</span>- .prettierrc.js
+  <span class="token operator">|</span>- .lintstagedrc.js
+  <span class="token operator">|</span>- babel.config.js
+  <span class="token operator">|</span>- commitlint.config.js
+  <span class="token operator">|</span>- /node_modules
+  <span class="token operator">|</span>- /packages
+    <span class="token operator">|</span>- /shared
+      <span class="token operator">|</span>- util.js
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /front
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- webpack.config.js
++     <span class="token operator">|</span>- .babelrc.js
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /backend
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- webpack.config.js
+      <span class="token operator">|</span>- package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p><strong>front/.babelrc.js</strong></p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 子项目特有配置</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>配置 babel-loader 整合父级配置文件</p> <p><strong>front/webpack.config.js</strong></p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+  module<span class="token operator">:</span> <span class="token punctuation">{</span>
+    rules<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        test<span class="token operator">:</span> <span class="token regex">/\.js$/</span><span class="token punctuation">,</span>
+        use<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            loader<span class="token operator">:</span> <span class="token string">&quot;babel-loader&quot;</span><span class="token punctuation">,</span>
+            options<span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token comment">// 向上找babel.config.js/json。也可以使用configFile自定义位置</span>
+              <span class="token comment">// 不配置这个将只使用本项目的 .babelrc 配置，而父级的 babel.config.js 不会起作用</span>
+              rootMode<span class="token operator">:</span> <span class="token string">&quot;upward&quot;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        exclude<span class="token operator">:</span> <span class="token regex">/node_modules/</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h4 id="使用-jest"><a href="#使用-jest" class="header-anchor">#</a> 使用 jest</h4> <p>子项目 front 使用 jest 进行单元测试和 e2e 测试</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">yarn</span> workspace front <span class="token function">add</span> jest
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code>monorepo
+  <span class="token operator">|</span>- package.json
+  <span class="token operator">|</span>- yarn.lock
+  <span class="token operator">|</span>- .gitignore
+  <span class="token operator">|</span>- .eslintignore
+  <span class="token operator">|</span>- .eslintrc.js
+  <span class="token operator">|</span>- .prettierrc.js
+  <span class="token operator">|</span>- .lintstagedrc.js
+  <span class="token operator">|</span>- babel.config.js
+  <span class="token operator">|</span>- commitlint.config.js
+  <span class="token operator">|</span>- /node_modules
+  <span class="token operator">|</span>- /packages
+    <span class="token operator">|</span>- /shared
+      <span class="token operator">|</span>- util.js
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /front
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- webpack.config.js
++     <span class="token operator">|</span>- /test
++       <span class="token operator">|</span>- .babelrc.js
++       <span class="token operator">|</span>- xxx.spec.js
++       <span class="token operator">|</span>- jest.config.js
+      <span class="token operator">|</span>- .babelrc.js
+      <span class="token operator">|</span>- package.json
+    <span class="token operator">|</span>- /backend
+      <span class="token operator">|</span>- /node_modules
+      <span class="token operator">|</span>- webpack.config.js
+      <span class="token operator">|</span>- package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><p><strong>front/jest.config.js</strong></p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  testEnvironment<span class="token operator">:</span> <span class="token string">&quot;node&quot;</span><span class="token punctuation">,</span>
+  verbose<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// 指定 babel 配置文件</span>
+  <span class="token comment">// https://github.com/facebook/jest/issues/3845#issuecomment-582511237</span>
+  transform<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;^.+\\.[jt]sx?$&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;babel-jest&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> configFile<span class="token operator">:</span> <span class="token string">&quot;./test/.babelrc.js&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 路径相对 pwd()</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h4 id="结合-lerna-待续"><a href="#结合-lerna-待续" class="header-anchor">#</a> 结合 lerna（待续）</h4> <p>省点事，没有用上，以后用上再补充</p> <p>https://zhuanlan.zhihu.com/p/71385053</p> <p>https://github.com/hardfist/monorepo-starter</p> <h3 id="三-参考"><a href="#三-参考" class="header-anchor">#</a> 三 参考</h3> <p><a href="https://github.com/sudo-suhas/lint-staged-multi-pkg" target="_blank" rel="noopener noreferrer">int-staged-multi-pkg<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>https://classic.yarnpkg.com/en/docs/workspaces/</p> <p><a href="https://www.jianshu.com/p/990afa30b6fe" target="_blank" rel="noopener noreferrer">Yarn Workspace 使用指南<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">8/29/2020, 7:19:18 AM</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.1b22b54f.js" defer></script><script src="/assets/js/3.5267404b.js" defer></script><script src="/assets/js/1.bd6596e1.js" defer></script><script src="/assets/js/32.bfb61002.js" defer></script>
+  </body>
+</html>
