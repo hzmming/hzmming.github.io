@@ -39,7 +39,7 @@ Registered Name: https://zhile.io
 License Key: 48891cf209c6d32bf4
 ```
 
-https网站无法正常访问
+### https网站无法正常访问
 
 https://www.charlesproxy.com/documentation/using-charles/ssl-certificates/
 
@@ -47,6 +47,7 @@ https://www.charlesproxy.com/documentation/using-charles/ssl-certificates/
 
 其实人家linux的方法也说了（但没讲清楚啊）linux不支持导入，而是直接导入到chrome，也就是在chrome上进行操作
 
-map local file, 请求没有正确响应
+
+### map local file, 请求没有正确响应
 
 https://stackoverflow.com/questions/21829485/charles-map-local-not-working-for-json-data

@@ -1,5 +1,5 @@
 ---
-title: npm scripts串行与并行
+title: npm使用技巧
 date: 2019-07-12
 tags:
   - NodeJS

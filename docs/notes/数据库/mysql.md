@@ -1,5 +1,5 @@
 ---
-title: mongodb
+title: mysql
 date: 2020-02-29
 tags:
   - 数据库
