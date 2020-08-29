@@ -72,6 +72,6 @@ if(ua.indexOf("Huajuanyun")<0&&ua.indexOf("iPhone")<0){
 
 括号内部代码肯定是一整块的，复制到控制台执行
 
-![img](F:\hzmming.github.io\docs\.vuepress\public\img\55861759.png)
+![img](/img/55861759.png)
 
 就这？？？
