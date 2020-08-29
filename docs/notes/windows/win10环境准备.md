@@ -3,7 +3,7 @@ title: win10环境准备
 date: 2020-07-15
 tags:
   - windows
-  - 环境
+  - environment
 categories:
   - windows
 ---
