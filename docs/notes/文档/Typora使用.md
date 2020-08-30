@@ -72,6 +72,8 @@ In newer version of Typora (≥ 0.9.9.32 on macOS or 0.9.84 on Windows / Linux),
 }
 ```
 
+> 配置中的 token 已经失效了，没有安全问题。之前都是写在为知笔记上，最近才搬到 github 上，一不小心就传了上来，github 检测到自动删除掉对应 token，也是很给力了！！！ 
+
 更多细节，可看官方说明
 
 https://support.typora.io/Upload-Image/

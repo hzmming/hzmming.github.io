@@ -24,6 +24,7 @@ jobs:
           gitee-username: mingg
           # 注意在 Settings->Secrets 配置 GITEE_PASSWORD
           gitee-password: ${{ secrets.GITEE_PASSWORD }}
-          # 注意替换为你的 Gitee 仓库
-          gitee-repo: mingg
+          # 注意替换为你的 Gitee 用户名和仓库名
+          gitee-repo: mingg/mingg
+          # 默认是 master 分支，不过我的是 gh-pages 分支
           branch: gh-pages
