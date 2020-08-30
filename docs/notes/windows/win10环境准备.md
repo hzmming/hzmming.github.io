@@ -603,3 +603,19 @@ $Env:http_proxy="http://127.0.0.1:7890";$Env:https_proxy="http://127.0.0.1:7890"
 ```powershell
 scoop install yarn
 ```
+
+> scoop 的 yarn 会和 WSL 里的 yarn 冲突，把人家 WSL 里的 yarn 装包路径给改了
+>
+> `yarn global bin`查看会出一个 windows 路径和 liunx 路径结合的奇怪路径
+>
+> 没排查怎么解决，关键字可以搜下 scoop shim wsl，以后有机会再看吧，顺便用下另外一种包安装方式 
+>
+> ```powershell
+> # 以管理员身份运行 powershell（以后用的时候也要以管理员身份，不然会警告）
+> Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+> 
+> # 安装 yarn
+> choco install yarn
+> ```
+>
+>  chocolatey 安装的 yarn 不会和 WSL 里的冲突，完美
