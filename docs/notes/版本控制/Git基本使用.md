@@ -29,18 +29,106 @@ sudo apt install git
 
 
 
-### 设置个人信息
+### 配置 SSH-Key
 
- 
+#### 单个 key
+
+```shell
+# linux和mac系统自带ssh-keygen。windows系统请使用 git bash
+ssh-keygen -t rsa -C '844155285@qq.com'
+```
+
+连续回车即可，如果不需要密码。
+
+生成私钥 `id_rsa` 和公钥 `id_rsa.pub`。公钥名字就是私钥加个 pub 后缀名。
+
+将公钥添加到 github 上
+
+![image-20200830113134203](/img/image-20200830113134203.png)
+
+![image-20200830113153150](/img/image-20200830113153150.png)
+
+![image-20200830113220303](/img/image-20200830113220303.png)
+
+![image-20200830114248618](/img/image-20200830114248618.png)
+
+在终端测试下是否成功
+
+```shell
+ssh -T git@github.com
+```
+
+
+
+#### 多个 key
+
+当我们要同时具备多个 git 账号时，就需要配置多个。
+
+比如同时具备 github 和 gitee
+
+```shell
+# 给gitee用
+ssh-keygen -t rsa -C '844155285@qq.com' -f ~/.ssh/gitee_id_rsa # 和单个key的区别就是，我这里指定了名称
+
+# 给github用
+ssh-keygen -t rsa -C '844155285@qq.com' -f ~/.ssh/github_id_rsa
+```
+
+生成 `gitee_id_rsa`、`gitee_id_rsa.pub`和`github_id_rsa`、`github_id_rsa.pub`两对
+
+新增配置文件，指定哪对密钥对应哪个网站
+
+```shell
+# 新建一个无后缀的文件，名字叫 config
+touch config
+```
+
+内容如下
+
+```shell
+# gitee
+Host gitee.com
+HostName gitee.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/gitee_id_rsa
+# github
+Host github.com
+HostName github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/github_id_rsa
+```
+
+
+
+一样的道理，将公钥添加到对应的网站
+
+github 的添加过程上面有了，这里再讲下 gitee 的添加过程
+
+![image-20200830113952163](/img/image-20200830113952163.png)
+
+
+
+![image-20200830114111152](/img/image-20200830114111152.png)
+
+验证下是否成功
+
+```shell
+ssh -T git@gitee.com
+ssh -T git@github.com
+```
+
+
+
+### 设置个人信息
 
 ```shell
 git config --global user.name LoryHuang
 git config --global user.email 844155285@qq.com
 ```
 
-### 创建自己的分支
 
- 
+
+### 创建自己的分支
 
 ```shell
 git checkout -b hzm        # 创建自己的分支 并切换过去
