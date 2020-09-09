@@ -31,6 +31,11 @@ module.exports = {
         icon: "reco-date",
       },
       {
+        text: "About",
+        link: "/about/",
+        icon: "reco-account",
+      },
+      {
         text: "Contact",
         icon: "reco-message",
         items: [
